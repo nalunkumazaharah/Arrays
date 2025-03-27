@@ -18,3 +18,30 @@ console.log(statement)
 var arr3 =[-5,9,5,3,2,-3,6,8,4,1];
 let y = arr3.sort();
 console.log(y);
+
+//number five
+let arr = ["boy", "man", "girl", "school", "girl", "woman"];
+
+let prtAr = [];
+let stmt= [];
+let counts = {};
+
+arr.forEach(item => {
+    if (counts[item]) {
+        counts[item]++;
+    } else {
+        counts[item] = 1;
+    }
+});
+
+for (let item in counts) {
+    if (counts[item] === 1) {
+        uniqueArr.push(item);
+    } else {
+        duplicatesArr.push(item);
+    }
+}
+
+console.log("Array without duplicates:", prtAr);
+console.log("Array with duplicates only:", stmt);
+//number 
