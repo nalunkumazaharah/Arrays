@@ -32,9 +32,7 @@ let orderedText = text.split('').reduce((acc, ch) => {
 }, []).join(''); 
 console.log(orderedText);
 
-let fruitSet = ["Apple", "Banana", "Jackfruit", "Mango", "pineaple", "Grape", "orange", "Peach", "avocado", "Berries"];
-fruitSet.splice(4, 0, "Tomato");  
-console.log(fruitSet);
+
 
 
 //number four
@@ -60,3 +58,7 @@ array.forEach(item => {
 console.log("Array without duplicates:", uniqueArray);
 console.log("Array with duplicates:", duplicatesArray);
 
+//number five
+let arr5 = ["the", "way", "x", 4];
+let search= arr5.indexOf("food") + 1;
+console.log(search);
